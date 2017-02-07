@@ -1,7 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 
+/***************************************************************
+ * http://geekswithblogs.net/BlackRabbitCoder/archive/2011/06/16/c.net-fundamentals-choosing-the-right-collection-class.aspx
+* WHAT QUESTIONS DO YOU NEED TO ASK YOURSELF WHEN SELECTING THE RIGHT COLLECTION?
+* 01) Is your collection fixed or does it grow or shrink after initialization?
+* 02) Do you need fast lookup by key?
+* 03) Do you insert or delete in random positions?
+* 04) Do you insert or delete frequently?
+* 05) Do you need first in first out?
+* 06) Do you need last in first out?
+* 07) Do you need items sorted?
+* 08) Do you need fast lookup at indexed positions?
+* 09) Do items have to be unique?
+* 10) Is key and value the same object?
+****************************************************************/
 namespace ChooseRightCollection
 {
     class Program
@@ -96,7 +110,7 @@ namespace ChooseRightCollection
         private static void GenericHashSet()
         {
             // HashSet<T>
-            // Unordered, lookup via key, unique unordered collection , like a Dictionary except key and value are same object
+            // Unordered, lookup via key, unique unordered collection, like a Dictionary except key and value are same object
             // Unordered collection of unique items. Logically very similar to having Dictionary<TKey, TValue> where the key and value refer to same object
             // Like Dictionary, the type T should have a valid implementation of GetHashCode() and Equals()
 
